@@ -1,0 +1,4 @@
+pytorch == 1.0.1
+matpotlib == 3.0.3
+csvkit == 1.0.3
+
