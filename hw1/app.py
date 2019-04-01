@@ -91,7 +91,7 @@ for epoch in range(EPOCH):
 
 output = net(forecast).cpu()
 output = output.tolist()
-with open('submission.csv','a',newline='') as csv_sub:
+with open('submission1.csv','w',newline='') as csv_sub:
     writer = csv.writer(csv_sub)
     writer.writerow(['date','peak_load(MW)'])
     writer.writerow(['20180402', '%.1f' % output[0][0]])
